@@ -1,0 +1,25 @@
+{
+  "name": "gpio-artnet-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxjoehnk/gpio-artnet-server.git"
+  },
+  "author": "Max Jöhnk <maxjoehnk@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/maxjoehnk/gpio-artnet-server/issues"
+  },
+  "homepage": "https://github.com/maxjoehnk/gpio-artnet-server#readme",
+  "dependencies": {
+    "artnet-node": "github:mauriciomassaia/artnet-node",
+    "commander": "^2.9.0",
+    "debug": "^2.6.2",
+    "lodash.foreach": "^4.5.0"
+  }
+}
