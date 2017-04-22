@@ -1,0 +1,18 @@
+FROM hypriot/rpi-node
+
+RUN mkdir -p /usr/src/gpio-artnet-node
+WORKDIR /usr/src/gpio-artnet-node
+
+RUN cd /usr/src &\
+	wget abyz.co.uk/rpi/pigpio/pigpio.zip &\
+	unzip pigpio.zip &\
+	cd PIGPIO &\
+	make -j4 &\
+	make install
+
+COPY package.json /usr/src/gpio-artnet-node
+RUN npm install
+
+COPY . /usr/src/gpio-artnet-node
+
+CMD ["node", "lib/index.js"]
