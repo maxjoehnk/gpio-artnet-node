@@ -3,6 +3,7 @@ FROM hypriot/rpi-node
 RUN mkdir -p /usr/src/gpio-artnet-node
 WORKDIR /usr/src/gpio-artnet-node
 
+RUN apt-get update && apt-get install unzip
 RUN cd /usr/src &&\
 	wget abyz.co.uk/rpi/pigpio/pigpio.zip &&\
 	unzip pigpio.zip &&\
