@@ -1,16 +1,16 @@
 # gpio-artnet-node
 
 # Example
-```javas
+```javascript
 {
+  "port": 6454,
+  "universe": 0,
+  "ports": [
     {
       "dmx": 1,
       "gpio": 1
     },
     {
-  "port": 6454,
-  "universe": 0,
-  "ports": [
       "dmx": [2, 3],
       "gpio": 2
     },
